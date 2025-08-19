@@ -157,7 +157,8 @@ ax2.grid(True, alpha=0.25)
 ax2.set_xlabel(r"$k\;[h\,\mathrm{Mpc}^{-1}]$")
 ax2.set_ylabel(r"$100\times(P_{\rm ULPT}/P_{\rm Emu}-1)$ [\%]", fontsize=12)
 
-plt.tight_layout()
-# plt.savefig("pspec_z0p5_logM13p5_linear.png", dpi=220, bbox_inches="tight")  # optional
+#plt.tight_layout()
+plt.savefig("figures/power_z0p5_logM13p5.png", dpi=220, bbox_inches="tight")
 plt.show()
+
 

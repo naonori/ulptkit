@@ -149,7 +149,8 @@ ax2.grid(True, alpha=0.25)
 ax2.set_xlabel(r"$r\;[h^{-1}\,\mathrm{Mpc}]$")
 ax2.set_ylabel(r"$100\times(\xi_{\rm ULPT}/\xi_{\rm Emu}-1)$ [\%]", fontsize=13)
 
-plt.tight_layout()
-# plt.savefig("halo_corr_z0p5_logM13p5_linear.png", dpi=220, bbox_inches="tight")  # optional
+#plt.tight_layout()
+plt.savefig("figures/corr_z0p5_logM13p5.png", dpi=220, bbox_inches="tight")
 plt.show()
+
 
