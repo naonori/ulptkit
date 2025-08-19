@@ -53,7 +53,7 @@ within the ULPT framework.
 pip install -e .
 ```
 
-### With dark emulator support (SciPy will be downgraded to <1.10 if necessary)
+### With dark emulator support
 ```bash
 pip install -e '.[emulator]'
 ```
