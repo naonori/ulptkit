@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=69", "wheel", "setuptools-scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ulptkit"
+description = "Unified Lagrangian Perturbation Theory toolkit for cosmological power spectra"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [{ name = "Naonori Sugiyama", email = "nao.s.sugiyama@gmail.com" }]
+
+dependencies = [
+  "numpy>=1.24,<3",
+  "scipy>=1.10,<2",
+  "mcfit>=0.0.22"
+]
+
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Astronomy",
+  "Topic :: Scientific/Engineering :: Physics",
+  "Operating System :: OS Independent"
+]
+
+[project.optional-dependencies]
+emulator = [
+  "dark_emulator>=0.6",
+  "colossus",
+  "scipy<1.10"
+]
+
+plot = [
+  "matplotlib>=3.7,<4"
+]
+
+[project.urls]
+Homepage = "https://github.com/naonori/ulptkit"
+Repository = "https://github.com/naonori/ulptkit"
+Issues = "https://github.com/naonori/ulptkit/issues"
+Documentation = "https://github.com/naonori/ulptkit#readme"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["ulptkit*"]
+namespaces = false
+
+[tool.setuptools_scm]
+version_scheme = "guess-next-dev"
+local_scheme = "node-and-date"
+write_to = "src/ulptkit/_version.py"
+
