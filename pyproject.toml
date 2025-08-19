@@ -1,9 +1,10 @@
 [build-system]
-requires = ["setuptools>=69", "wheel", "setuptools-scm>=8"]
+requires = ["setuptools>=69"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "ulptkit"
+version = "0.1.0"
 description = "Unified Lagrangian Perturbation Theory toolkit for cosmological power spectra"
 readme = "README.md"
 requires-python = ">=3.9"
@@ -55,9 +56,4 @@ package-dir = {"" = "src"}
 where = ["src"]
 include = ["ulptkit*"]
 namespaces = false
-
-[tool.setuptools_scm]
-version_scheme = "guess-next-dev"
-local_scheme = "node-and-date"
-write_to = "src/ulptkit/_version.py"
 
