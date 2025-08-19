@@ -204,21 +204,35 @@ def P_13_b1b3(k,P):
     return P_bar
 ```
 
-### Step 3. Use these functions in your analysis
-Once added, you can import and use them when building biased tracer power spectra:
+## Examples
+
+We provide several ready-to-run example scripts under the `examples/` directory:
+
+- `sample_power_matter.py`
+  Computes the nonlinear matter power spectrum at z=0.5 using ULPT,
+  compares it against Dark Emulator, and produces plots of `P/P_nowiggle` and residuals.
+
+- `sample_power_halo.py`
+  Computes halo-halo auto and halo-matter cross power spectra at z=0.5, logM=13.5,
+  including bias parameters (b1,b2,b3,Nshot), compares ULPT to Dark Emulator,
+  and plots `P/P_nowiggle` and residuals.
+
+- `sample_corr_matter.py`
+  Computes the matter correlation function `\xi(r)` at z=0.5 via Hankel transform,
+  compares ULPT to Dark Emulator, and plots `r^2 \xi(r)` and residuals.
+
+- `sample_corr_halo.py`
+  Computes halo correlation functions (`\xi_hh`, `\xi_hm`) at z=0.5, logM=13.5,
+  compares ULPT to Dark Emulator, and plots `r^2\xi(r)` and residuals.
+
+### Running the examples
+Run any script, for example:
 ```bash
-from fastpt.matter_power_spt import (
-    P_22_J, P_22_b1b2, P_22_b2b2, P_13_b1b3
-)
-
-# Example: compute contributions
-P_J = P_22_J(k, P_lin, P_window, C_window, n_pad)
-P_b1b2 = P_22_b1b2(k, P_lin, P_window, C_window, n_pad)
-P_b2b2 = P_22_b2b2(k, P_lin, P_window, C_window, n_pad)
-P_b1b3 = P_13_b1b3(k, P_lin)
+python examples/sample_power_matter.py
+python examples/sample_power_halo.py
+python examples/sample_corr_matter.py
+python examples/sample_corr_halo.py
 ```
-
-## Usage
 
 ## Citation
 If you use `ulptkit` in your research, please cite the corresponding paper(s)
