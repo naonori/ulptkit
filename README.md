@@ -13,6 +13,15 @@ within the ULPT framework.
 
 ---
 
+## Example Output
+
+Here is an example halo power spectrum computed with ULPT (at z=0.5, logM=13.5)
+compared against Dark Emulator:
+
+![Halo Power Spectrum](figures/power_z0p5_logM13p5.png)
+
+---
+
 ## Features
 
 - ULPT-based power spectrum computation:
@@ -209,6 +218,9 @@ python examples/sample_power_halo.py
 python examples/sample_corr_matter.py
 python examples/sample_corr_halo.py
 ```
+
+The scripts automatically generate PNG figures and save them into the
+`figures/` directory (e.g., `figures/power_z0p5_logM13p5.png`).
 
 ## Citation
 If you use `ulptkit` in your research, please cite the corresponding paper(s)
