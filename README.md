@@ -82,12 +82,8 @@ conda activate ulptkit-env
 git clone https://github.com/naonori/ulptkit.git
 cd ulptkit
 
-# Install ulptkit in editable mode
-pip install -e .
-
-# (Optional) with extras
-pip install -e '.[emulator]'
-pip install -e '.[plot]'
+# Install ulptkit
+pip install -e '.[emulator,plot]'
 ```
 
 ## Using FAST-PT for 1-loop corrections (required for ULPT and biased tracers)
@@ -206,7 +202,7 @@ introducing Unified Lagrangian Perturbation Theory (ULPT).
 (Preprint / arXiv references to be added here.)
 
 ## License
-MIT License © 2025 Naonori Sugiyama
+MIT License (c) 2025 Naonori Sugiyama
 
 ## Issues and Contact
 If you find a bug, have a question, or would like to suggest an improvement,
