@@ -7,9 +7,9 @@ calculations based on Unified Lagrangian Perturbation Theory (ULPT).
 It is designed for research in large-scale structure and cosmology,
 with a simple interface and minimal required dependencies.
 
-This toolkit is designed not only to compute the nonlinear matter power spectrum,
-but also to provide consistent calculations of halo-halo auto power spectra and
-halo-matter cross power spectra within the ULPT framework.
+This toolkit can compute the nonlinear matter power spectrum and provides
+consistent calculations of halo-halo auto and halo-matter cross power spectra
+within the ULPT framework.
 
 ---
 
@@ -21,9 +21,7 @@ halo-matter cross power spectra within the ULPT framework.
   - `pk_nowiggle(k, omega_cdm, omega_b, h, n_s, P_lin)`
 - Modular design: supply your own linear power spectrum (`P_lin`)
   from emulators or Boltzmann solvers (CLASS, CAMB).
-- Optional support for **dark_emulator**:
-  used to generate the linear input power spectrum, and also for direct comparison with ULPT results
-  (requires SciPy <1.10).
+- Optional support for **dark_emulator** (see *SciPy compatibility* below).
 - Optional plotting support with **matplotlib**:
   used for visualizing comparisons; not required if you already have matplotlib installed.
 
@@ -31,18 +29,31 @@ halo-matter cross power spectra within the ULPT framework.
 
 ## Requirements
 
-- Python >= 3.9  
-- numpy >= 1.24, < 3  
-- scipy >= 1.10, < 2 (default installation)  
-- mcfit >= 0.0.22  
+- Python ≥ 3.9  
+- **SciPy < 1.10** (standard install)  
+- NumPy ≥ 1.24, < 3  
+- mcfit ≥ 0.0.22
 
-### Note on SciPy version
+> **SciPy compatibility.**
+> This project standardizes on **SciPy < 1.10** so that the optional `emulator`
+> extra (which depends transitively on functionality removed in SciPy 1.10)
+> works out of the box. ULPT power spectrum calculations **themselves do not
+> require Dark Emulator**; it is only used to generate linear power spectra and
+> to provide a point of comparison with ULPT results. If you compute linear
+> spectra with CLASS or CAMB instead of Dark Emulator, you may experiment with
+> newer SciPy versions. However, the default constraints pin
+> `<1.10` to ensure maximum compatibility with the emulator workflow.
 
-By default, `ulptkit` works with the latest SciPy (>=1.10).  
-However, the optional package **dark_emulator** relies on
-`scipy.misc.derivative`, which was removed in SciPy 1.10.  
-For this reason, when installing with the `emulator` extra,
-`scipy` will be automatically restricted to `<1.10`.
+---
+
+## Installation
+
+### Basic (editable)
+```bash
+pip install -e .
+
+
+
 
 ---
 
