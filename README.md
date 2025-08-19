@@ -86,30 +86,6 @@ cd ulptkit
 pip install -e '.[emulator,plot]'
 ```
 
-## Running Tests
-
-We provide a small precomputed linear power spectrum (`pklin_z0p5.npz`) for testing.  
-This file is included in the repository under `tests/`.
-
-### Requirements
-
-Install the test extra:
-
-```bash
-pip install -e .[test]
-```
-
-### Running the tests
-From the repository root:
-```bash
-pytest -q
-```
-Expected output:
-```bash
-..
-2 passed in 1.34s
-```
-
 ## Using FAST-PT for 1-loop corrections (required for ULPT and biased tracers)
 
 To compute one-loop corrections within the ULPT framework, including the
