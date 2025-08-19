@@ -42,6 +42,10 @@ plot = [
   "matplotlib>=3.7,<4"
 ]
 
+test = [
+    "pytest>=7.0",
+]
+
 [project.urls]
 Homepage = "https://github.com/naonori/ulptkit"
 Repository = "https://github.com/naonori/ulptkit"
