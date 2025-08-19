@@ -48,17 +48,6 @@ within the ULPT framework.
 
 ## Installation
 
-### Basic (editable)
-```bash
-pip install -e .
-
-
-
-
----
-
-## Installation
-
 ### Basic installation
 ```bash
 pip install -e .
