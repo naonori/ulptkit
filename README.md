@@ -223,9 +223,29 @@ The scripts automatically generate PNG figures and save them into the
 `figures/` directory (e.g., `figures/power_z0p5_logM13p5.png`).
 
 ## Citation
-If you use `ulptkit` in your research, please cite the corresponding paper(s)
-introducing Unified Lagrangian Perturbation Theory (ULPT).
-(Preprint / arXiv references to be added here.)
+
+If you use `ulptkit` in your research, please cite the corresponding paper(s) introducing Unified Lagrangian Perturbation Theory (ULPT):
+
+### ULPT theory paper
+```bibtex
+@article{Sugiyama:2025ntz,
+    author        = {Sugiyama, Naonori},
+    title         = "{A Unified Lagrangian Framework for Galaxy Clustering: Consistent Modeling of Bias, Redshift-Space Distortions, and Reconstruction}",
+    eprint        = "2508.17331",
+    archivePrefix = "arXiv",
+    primaryClass  = "astro-ph.CO",
+    month         = "8",
+    year          = "2025"
+}
+```
+
+### One-loop matter power spectrum paper
+
+(To appear. Preprint / DOI will be added once available.)
+
+### Biased power spectrum paper
+
+(To appear. Preprint / DOI will be added once available.)
 
 ## License
 MIT License (c) 2025 Naonori Sugiyama
@@ -236,5 +256,4 @@ please open an issue on the [Issues page](https://github.com/naonori/ulptkit/iss
 
 Alternatively, you may contact the author directly by email:
 **nao.s.sugiyama@gmail.com**
-
 
