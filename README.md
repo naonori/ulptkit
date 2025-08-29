@@ -252,5 +252,5 @@ If you find a bug, have a question, or would like to suggest an improvement,
 please open an issue on the [Issues page](https://github.com/naonori/ulptkit/issues).
 
 Alternatively, you may contact the author directly by email:
-**nao.s.sugiyama@gmail.com**
+**nao.s.sugiyama[at]gmail.com**
 
