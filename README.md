@@ -1,15 +1,12 @@
-# ulptkit
+# Unified Lagrangian Perturbation Theory Toolkit (ulptkit)
 
-Unified Lagrangian Perturbation Theory Toolkit for cosmological power spectra.
+**ulptkit** is a lightweight Python package for cosmological power spectrum calculations based on **Unified Lagrangian Perturbation Theory (ULPT)**.
+It is designed for large-scale structure and cosmology research, offering a clean interface with minimal dependencies.
 
-`ulptkit` provides a lightweight Python implementation of power spectrum
-calculations based on Unified Lagrangian Perturbation Theory (ULPT).
-It is designed for research in large-scale structure and cosmology,
-with a simple interface and minimal required dependencies.
-
-This toolkit can compute the nonlinear matter power spectrum and provides
-consistent calculations of halo-halo auto and halo-matter cross power spectra
-within the ULPT framework.
+The toolkit provides:
+- Nonlinear matter power spectrum calculations within the ULPT framework.
+- Consistent evaluations of **galaxy–galaxy auto power spectra** and **galaxy–matter cross power spectra**.
+- Demonstration scripts comparing ULPT predictions with the corresponding **halo–halo auto** and **halo–matter cross** power spectra computed by the **Dark Emulator**.
 
 ---
 
