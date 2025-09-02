@@ -238,7 +238,17 @@ If you use `ulptkit` in your research, please cite the corresponding paper(s) in
 
 ### One-loop matter power spectrum paper
 
-(To appear. Preprint / DOI will be added once available.)
+```bibtex
+@article{Sugiyama:2025myq,
+    author = "Sugiyama, Naonori",
+    title = "{One-Loop Nonlinear Matter Power Spectrum from Unified Lagrangian Perturbation Theory: Fast Computation and Comparison with Emulators}",
+    eprint = "2508.21275",
+    archivePrefix = "arXiv",
+    primaryClass = "astro-ph.CO",
+    month = "8",
+    year = "2025"
+}
+```
 
 ### Biased power spectrum paper
 
