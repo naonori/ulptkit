@@ -4,9 +4,9 @@
 It is designed for large-scale structure and cosmology research, offering a clean interface with minimal dependencies.
 
 The toolkit provides:
-- Nonlinear matter power spectrum calculations within the ULPT framework.
-- Consistent evaluations of **galaxy–galaxy auto power spectra** and **galaxy–matter cross power spectra**.
-- Demonstration scripts comparing ULPT predictions with the corresponding **halo–halo auto** and **halo–matter cross** power spectra computed by the **Dark Emulator**.
+- **Nonlinear matter power spectrum** calculations within the ULPT framework.
+- Consistent evaluations of **galaxy-galaxy auto power spectra** and **galaxy-matter cross power spectra**.
+- Demonstration scripts comparing ULPT predictions with the corresponding **halo-halo auto** and **halo-matter cross** power spectra computed by the **Dark Emulator**.
 
 ---
 
@@ -92,7 +92,7 @@ cd ulptkit
 pip install -e '.[emulator,plot]'
 ```
 
-## Using FAST-PT for 1-loop corrections (required for ULPT and biased tracers)
+## Using FAST-PT for 1-loop corrections
 
 To compute one-loop corrections within the ULPT framework, including the
 nonlinear matter power spectrum, the halo-halo auto power spectrum, and
