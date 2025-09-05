@@ -252,7 +252,18 @@ If you use `ulptkit` in your research, please cite the corresponding paper(s) in
 
 ### Biased power spectrum paper
 
-(To appear. Preprint / DOI will be added once available.)
+```bibtex
+@article{Sugiyama:2025juk,
+    author = "Sugiyama, Naonori",
+    title = "{Renormalization-Free Galaxy Bias in Unified Lagrangian Perturbation Theory}",
+    eprint = "2509.04142",
+    archivePrefix = "arXiv",
+    primaryClass = "astro-ph.CO",
+    month = "9",
+    year = "2025"
+}
+```
+
 
 ## License
 MIT License (c) 2025 Naonori Sugiyama
